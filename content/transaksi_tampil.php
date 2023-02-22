@@ -18,6 +18,7 @@
                             <th>No</th>
                             <th>Tanggal</th>
                             <th>Nama Nasabah</th>
+                            <th>Jenis Transaksi</th>
                             <th>Setor</th>
                             <th>Tarik</th>
                             <th>Aksi</th>
@@ -25,7 +26,7 @@
                         </thead>
                         <tbody>
                         <?php
-                        $tampil = "SElECT * FROM transaksi";
+                        $tampil = "SElECT * FROM view_transaksi";
                         $query = mysqli_query($koneksi,$tampil);
                         $no=0;
                         while ($data = mysqli_fetch_array($query)) {
@@ -36,8 +37,12 @@
                                 <td><?= $no; ?></td>
                                 <td><?= $data['tanggal']; ?></td>
                                 <td><?= $data['nama']; ?></td>
-                                <td><?= $data['setor']; ?></td>
-                                <td><?= $data['tarik']; ?></td>
+                                <td><?php
+                                    if ($data['kode_tr']=="1"){echo "Setor";}
+                                    elseif ($data['kode_tr']=="2"){echo "Tarik";}
+                                    ?></td>
+                                <td><?= "Rp. ". number_format($data['setor'],0,",", ".") . ",-"; ?></td>
+                                <td><?= "Rp. ". number_format($data['tarik'],0,",", ".") . ",-"; ?></td>
                                 <td>
                                     <!-- Modifikasi tombol edit dan hapus-->
                                     <a class="btn btn-sm btn-warning" href="?hal=transaksi_edit&id=<?= $data['id_transaksi'] ?>"> Edit </a>

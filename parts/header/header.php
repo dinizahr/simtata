@@ -6,7 +6,7 @@
   <!-- mini logo for sidebar mini 50x50 pixels -->
   <span class="logo-mini"><b>A</b>LT</span>
   <!-- logo for regular state and mobile devices -->
-  <span class="logo-lg"><b>Admin</b>SIMTATA</span>
+  <span class="logo-lg"><b><i>Admin</i></b>SIMTATA</span>
 </a>
 
 <!-- Header Navbar -->
@@ -125,11 +125,8 @@
           </li>
           <!-- Menu Footer-->
           <li class="user-footer">
-            <div class="pull-left">
-              <a href="#" class="btn btn-default btn-flat">Profil</a>
-            </div>
             <div class="pull-right">
-              <a href="logout.php" class="btn btn-default btn-flat">Keluar</a>
+              <center><a href="logout.php" class="btn btn-default btn-flat">Keluar</a></center>
             </div>
           </li>
         </ul>

@@ -12,8 +12,6 @@ $halaman=[
     "nasabah_update",
     "print",
     "profil",
-    "setor",
-    "tarik",
     "transaksi_delete",
     "transaksi_edit",
     "transaksi_insert",

@@ -2,21 +2,31 @@
 var_dump($_POST);
 include "library/config.php";
 //menampung nilai variable $_POST
-$tanggal = $_POST['tanggal'];
-$nama = $_POST['nama'];
-$jk = $_POST['jk'];
-$id_jenjang = $_POST['id_jenjang'];
-$setor = $_POST['setor'];
-$tarik = $_POST['tarik'];
 
-//memasukkan data ke dalam database
-$q="INSERT INTO transaksi SET
+//$nama = $_POST['nama'];
+//$jk = $_POST['jk'];
+//$id_jenjang = $_POST['id_jenjang'];
+//$setor = $_POST['setor'];
+//$tarik = $_POST['tarik'];
+
+$tanggal = $_POST['tanggal'];
+$id_nasabah = $_POST['id_nasabah'];
+$nominal= $_POST['nominal'];
+$kode_tr=$_POST['kode_tr'];
+
+if ($kode_tr=="1"){
+    $q="INSERT INTO transaksi SET
 tanggal='$tanggal',
-nama='$nama',
-jk='$jk',
-id_jenjang= $id_jenjang ,
-setor= $setor ,
-tarik= $tarik ";
+id_nasabah='$id_nasabah',
+kode_tr='$kode_tr',
+setor='$nominal'";
+} elseif ($kode_tr=="2"){
+    $q="INSERT INTO transaksi SET
+tanggal='$tanggal',
+id_nasabah='$id_nasabah',
+kode_tr='$kode_tr',
+tarik='$nominal'";
+}
 
 $query=mysqli_query($koneksi,$q);
 

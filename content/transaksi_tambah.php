@@ -18,42 +18,34 @@
                             <label for="tanggal">Tanggal</label>
                             <input type="date" class="form-control" name="tanggal" id="tanggal" placeholder="tanggal"required>
                         </div>
-                        <div class="form-group">
-                            <label for="nama">Nama Nasabah</label>
-                            <input type="text" class="form-control" name="nama" id="nama" placeholder="nama"required>
-                        </div>
-                        <div class="form-group">
-                            <label for="jk">Jenis Kelamin</label>
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" name="jk" id="jk" value="L" required>Laki-laki
-                                </label>
-                            </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" name="jk" id="jk" value="P">Perempuan
-                                </label>
-                            </div>
                             <div class="form-group">
-                                <label for="id_jenjang">Jenjang</label>
-                                <select class="form-control" name="id_jenjang" id="id_jenjang" required>
-                                    <option value=""> - Pilih Jenjang - </option>
+                                <label for="id_nasabah">Nama Nasabah</label>
+                                <select class="form-control" name="id_nasabah" id="id_nasabah" required>
+                                    <option value=""> - Pilih Nasabah - </option>
                                     <?php
-                                    $query_jenjang=mysqli_query($koneksi,"SELECT * FROM jenjang");
-                                    while ($j=mysqli_fetch_array($query_jenjang)){
-                                        echo "<option value='$j[id_jenjang]'> $j[nama_jenjang]</option>";
+                                    $query_nasabah=mysqli_query($koneksi,"SELECT * FROM data_nasabah");
+                                    while ($j=mysqli_fetch_array($query_nasabah)){
+                                        echo "<option value='$j[id_nasabah]'> $j[nama]</option>";
                                     }
                                     ?>
                                 </select>
                             </div>
-                        </div>
                         <div class="form-group">
-                            <label for="setor">Setor</label>
-                            <input type="number" class="form-control" name="setor" id="setor" placeholder="setor">
-                        </div>
+                            <label for="kode_tr">Jenis Transaksi</label>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="kode_tr" id="kode_tr" value="1" required>Setor
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="kode_tr" id="kode_tr" value="2">Tarik
+                                </label>
+
+                            </div>
                         <div class="form-group">
-                            <label for="tarik">Tarik</label>
-                            <input type="number" class="form-control" name="tarik" id="tarik" placeholder="tarik">
+                            <label for="nominal">Nominal</label>
+                            <input type="number" class="form-control" name="nominal" id="nominal" placeholder="Masukkan nominal uang">
                         </div>
                         <div class="box-footer">
                             <button type="submit" class="btn btn-success">Simpan</button>
