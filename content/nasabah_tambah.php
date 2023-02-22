@@ -43,21 +43,21 @@
                                     <?php
                                     $query_jenjang=mysqli_query($koneksi,"SELECT * FROM jenjang");
                                     while ($j=mysqli_fetch_array($query_jenjang)){
-                                        echo "<option value='$j[nama_jenjang]'> $j[nama_jenjang]</option>";
+                                        echo "<option value='$j[id_jenjang]'> $j[nama_jenjang]</option>";
                                     }
                                     ?>
                                 </select>
                             </div>
                             <div class="form-group">
                                 <label for="saldo">Saldo</label>
-                                <input type="text" class="form-control" name="saldo" id="saldo" placeholder="Saldo" required>
+                                <input type="number" class="form-control" name="saldo" id="saldo" placeholder="Saldo" required>
                             </div>
 
                         </div>
                         <!-- /.box-body -->
 
                         <div class="box-footer">
-                            <button type="submit" class="btn btn-success">Simpan</button>
+                            <button type="submit" class="btn btn-sm btn-success">Simpan</button>
                             <a class="btn btn-sm btn-primary" href="?hal=nasabah_tampil">Batal</a>
                         </div>
                     </div>

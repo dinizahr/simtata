@@ -20,7 +20,6 @@
                             <th>Nama Nasabah</th>
                             <th>Setor</th>
                             <th>Tarik</th>
-                            <th>Saldo</th>
                             <th>Aksi</th>
                         </tr>
                         </thead>
@@ -39,7 +38,6 @@
                                 <td><?= $data['nama']; ?></td>
                                 <td><?= $data['setor']; ?></td>
                                 <td><?= $data['tarik']; ?></td>
-                                <td><?= $data['saldo']; ?></td>
                                 <td>
                                     <!-- Modifikasi tombol edit dan hapus-->
                                     <a class="btn btn-sm btn-warning" href="?hal=transaksi_edit&id=<?= $data['id_transaksi'] ?>"> Edit </a>

@@ -10,7 +10,6 @@
             <!-- Optionally, you can add icons to the links -->
             <li><a href="?hal=dashboard"><i class="fa fa-tachometer"></i> <span>Dashboard</span></a></li>
             <li><a href="?hal=profil"><i class="fa fa-building"></i> <span>Profil Aplikasi</span></a></li>
-            <li><a href="?hal=jenjang"><i class="fa fa-group "></i> <span>Jenjang</span></a></li>
             <li class="treeview">
                 <a href="#"><i class="fa fa-bookmark"></i> <span>Master Data</span>
                     <span class="pull-right-container">

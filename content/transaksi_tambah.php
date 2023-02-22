@@ -19,32 +19,51 @@
                             <input type="date" class="form-control" name="tanggal" id="tanggal" placeholder="tanggal"required>
                         </div>
                         <div class="form-group">
-                            <label for="nama_transaksi">Nama Transaksi</label>
-                            <input type="text" class="form-control" name="nama_transaksi" id="nama_transaksi" placeholder="nama_nasabah"required>
+                            <label for="nama">Nama Nasabah</label>
+                            <input type="text" class="form-control" name="nama" id="nama" placeholder="nama"required>
+                        </div>
+                        <div class="form-group">
+                            <label for="jk">Jenis Kelamin</label>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="jk" id="jk" value="L" required>Laki-laki
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="jk" id="jk" value="P">Perempuan
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="id_jenjang">Jenjang</label>
+                                <select class="form-control" name="id_jenjang" id="id_jenjang" required>
+                                    <option value=""> - Pilih Jenjang - </option>
+                                    <?php
+                                    $query_jenjang=mysqli_query($koneksi,"SELECT * FROM jenjang");
+                                    while ($j=mysqli_fetch_array($query_jenjang)){
+                                        echo "<option value='$j[id_jenjang]'> $j[nama_jenjang]</option>";
+                                    }
+                                    ?>
+                                </select>
+                            </div>
                         </div>
                         <div class="form-group">
                             <label for="setor">Setor</label>
-                            <input type="text" class="form-control" name="setor" id="setor" placeholder="setor">
+                            <input type="number" class="form-control" name="setor" id="setor" placeholder="setor">
                         </div>
                         <div class="form-group">
                             <label for="tarik">Tarik</label>
-                            <input type="text" class="form-control" name="tarik" id="tarik" placeholder="tarik">
+                            <input type="number" class="form-control" name="tarik" id="tarik" placeholder="tarik">
                         </div>
-<!--                        <div class="form-group">-->
-<!--                            <label for="saldo">Saldo</label>-->
-<!--                            <input type="text" class="form-control" name="saldo" id="saldo" placeholder="saldo">-->
-<!--                        </div>-->
-                        <!-- /.box-body -->
-
                         <div class="box-footer">
                             <button type="submit" class="btn btn-success">Simpan</button>
                             <a class="btn btn-danger" href="?hal=transaksi_tampil">Batal</a>
                         </div>
-
+                    </div>
                 </form>
             </div>
             <!-- /.box -->
         </div>
         <!--/.col (left) -->
     </div>
-    </selection>
+    </section>

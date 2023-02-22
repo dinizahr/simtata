@@ -25,7 +25,7 @@
                         </thead>
                         <tbody>
                         <?php
-                        $tampil = "SElECT * FROM data_nasabah";
+                        $tampil = "SElECT * FROM view_nasabah";
                         $query = mysqli_query($koneksi,$tampil);
                         $no=0;
                         while ($data = mysqli_fetch_array($query)) {
@@ -36,8 +36,8 @@
                                 <td><?= $no; ?></td>
                                 <td><?= $data['no_rekening']; ?></td>
                                 <td><?= $data['nama']; ?></td>
-                                <td><?= $data['id_jenjang']; ?></td>
-                                <td><?= $data['saldo']; ?></td>
+                                <td><?= $data['nama_jenjang']; ?></td>
+                                <td><?= "Rp. ". number_format($data['saldo'],0,",", ".") . ",-"; ?></td>
                                 <td>
                                     <!-- Modifikasi tombol edit dan hapus-->
                                     <a class="btn btn-sm btn-warning" href="?hal=nasabah_edit&id=<?= $data['id_nasabah'] ?>"> Edit </a>

@@ -1,18 +1,22 @@
 <?php
-
+var_dump($_POST);
 include "library/config.php";
 //menampung nilai variable $_POST
 $tanggal = $_POST['tanggal'];
 $nama = $_POST['nama'];
+$jk = $_POST['jk'];
+$id_jenjang = $_POST['id_jenjang'];
 $setor = $_POST['setor'];
 $tarik = $_POST['tarik'];
 
 //memasukkan data ke dalam database
 $q="INSERT INTO transaksi SET
-no_rekening='$tanggal',
+tanggal='$tanggal',
 nama='$nama',
-setor='$setor',
-tarik='$tarik';
+jk='$jk',
+id_jenjang= $id_jenjang ,
+setor= $setor ,
+tarik= $tarik ";
 
 $query=mysqli_query($koneksi,$q);
 
