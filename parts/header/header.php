@@ -126,7 +126,7 @@
           <!-- Menu Footer-->
           <li class="user-footer">
             <div class="pull-right">
-              <center><a href="logout.php" class="btn btn-default btn-flat">Keluar</a></center>
+                <a href="logout.php" class="btn btn-default btn-flat">Keluar</a>
             </div>
           </li>
         </ul>

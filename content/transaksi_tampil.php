@@ -19,8 +19,7 @@
                             <th>Tanggal</th>
                             <th>Nama Nasabah</th>
                             <th>Jenis Transaksi</th>
-                            <th>Setor</th>
-                            <th>Tarik</th>
+                            <th>Nominal</th>
                             <th>Aksi</th>
                         </tr>
                         </thead>
@@ -41,8 +40,9 @@
                                     if ($data['kode_tr']=="1"){echo "Setor";}
                                     elseif ($data['kode_tr']=="2"){echo "Tarik";}
                                     ?></td>
-                                <td><?= "Rp. ". number_format($data['setor'],0,",", ".") . ",-"; ?></td>
-                                <td><?= "Rp. ". number_format($data['tarik'],0,",", ".") . ",-"; ?></td>
+                                <td><?= "Rp. ". number_format($data['nominal'],0,",", ".") . ",-"; ?></td>
+<!--                                <td>--><?php //= "Rp. ". number_format($data['setor'],0,",", ".") . ",-"; ?><!--</td>-->
+<!--                                <td>--><?php //= "Rp. ". number_format($data['tarik'],0,",", ".") . ",-"; ?><!--</td>-->
                                 <td>
                                     <!-- Modifikasi tombol edit dan hapus-->
                                     <a class="btn btn-sm btn-warning" href="?hal=transaksi_edit&id=<?= $data['id_transaksi'] ?>"> Edit </a>
