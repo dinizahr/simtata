@@ -19,6 +19,8 @@
                             <th>Tanggal</th>
                             <th>Nama Nasabah</th>
                             <th>Jenis Transaksi</th>
+<!--                            <th>Setor</th>-->
+<!--                            <th>Tarik</th>-->
                             <th>Nominal</th>
                             <th>Aksi</th>
                         </tr>

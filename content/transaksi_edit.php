@@ -16,7 +16,7 @@ $data = mysqli_fetch_array($query);
 <body>
 <h1>Edit Transaksi</h1>
 <hr>
-<form action="transaksi_update.php" method="post">
+<form action="?hal=transaksi_update" method="post">
     <ul>
         <li>
             <input type="hidden" name="id_transaksi" value="<?= $data['id_transaksi'] ?>">
@@ -57,7 +57,7 @@ $data = mysqli_fetch_array($query);
     <!--Tombol simpan-->
     <button type="submit"> Simpan </button>
     <!--Tombol batal-->
-    <a href="transaksi_tampil.php"><button type="button"> Batal </button></a>
+    <a href="?hal=transaksi_tampil"><button type="button"> Batal </button></a>
 
 </form>
 </body>

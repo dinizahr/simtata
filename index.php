@@ -7,8 +7,8 @@ if (empty($_SESSION['username']) or
     empty($_SESSION['password']))
 {
     echo "<script>
-     window.alert('Maaf, anda harus login terlebih dahulu');
-     window.location.href='login.php';
+    window.alert('maaf anda harus login terlebih dahulu');
+    window.location.href='login';
     </script>";
 } else {
     define('INDEX', true);
@@ -45,7 +45,7 @@ desired effect
 |               | sidebar-mini                            |
 |---------------------------------------------------------|
 -->
-<body class="hold-transition skin-yellow-light sidebar-mini">
+<body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
 
     <?php include "parts/header/header.php" ?>

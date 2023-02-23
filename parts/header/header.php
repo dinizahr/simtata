@@ -47,10 +47,10 @@
       <!-- Notifications Menu -->
       <li class="dropdown notifications-menu">
         <!-- Menu toggle button -->
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-          <i class="fa fa-bell-o"></i>
-          <span class="label label-warning">10</span>
-        </a>
+<!--        <a href="#" class="dropdown-toggle" data-toggle="dropdown">-->
+<!--          <i class="fa fa-bell-o"></i>-->
+<!--          <span class="label label-warning">10</span>-->
+<!--        </a>-->
         <ul class="dropdown-menu">
           <li class="header">You have 10 notifications</li>
           <li>
@@ -70,10 +70,10 @@
       <!-- Tasks Menu -->
       <li class="dropdown tasks-menu">
         <!-- Menu Toggle Button -->
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-          <i class="fa fa-flag-o"></i>
-          <span class="label label-danger">9</span>
-        </a>
+<!--        <a href="#" class="dropdown-toggle" data-toggle="dropdown">-->
+<!--          <i class="fa fa-flag-o"></i>-->
+<!--          <span class="label label-danger">9</span>-->
+<!--        </a>-->
         <ul class="dropdown-menu">
           <li class="header">You have 9 tasks</li>
           <li>
@@ -119,22 +119,22 @@
             <img src="dist/img/logo_mini.png" class="img-circle" alt="User Image">
 
             <p>
-              SIMTATA
-              <small>production 2023</small>
+                <b><i>youth work developer</i></b>
+              <small>pengembangan 2023</small>
             </p>
           </li>
           <!-- Menu Footer-->
           <li class="user-footer">
             <div class="pull-right">
-                <a href="logout.php" class="btn btn-default btn-flat">Keluar</a>
+                <a href="logout.php" class="btn bg-maroon">Keluar</a>
             </div>
           </li>
         </ul>
       </li>
       <!-- Control Sidebar Toggle Button -->
-      <li>
+<!--      <li>-->
 <!--        <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>-->
-      </li>
+<!--      </li>-->
     </ul>
   </div>
 </nav>
