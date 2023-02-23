@@ -15,7 +15,11 @@ $halaman=[
     "transaksi_delete",
     "transaksi_edit",
     "transaksi_insert",
+    "transaksi_insert_setor",
+    "transaksi_insert_tarik",
     "transaksi_tambah",
+    "transaksi_tambah_setor",
+    "transaksi_tambah_tarik",
     "transaksi_tampil",
     "transaksi_update"
 ];

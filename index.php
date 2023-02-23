@@ -8,7 +8,7 @@ if (empty($_SESSION['username']) or
 {
     echo "<script>
     window.alert('maaf anda harus login terlebih dahulu');
-    window.location.href='login';
+    window.location.href='login.php';
     </script>";
 } else {
     define('INDEX', true);
@@ -61,9 +61,9 @@ desired effect
 <?php include "parts/sidebar-left1.php" ?>
 
     <?php // include "parts/sidebar-right.php" ?>
-
-</div>
 <?php include "parts/footer.php" ?>
+</div>
+
 <!-- ./wrapper -->
 
 <?php include "parts/js-files.php" ?>

@@ -2,7 +2,7 @@
 
 include "library/config.php";
 //menampung nilai variable $_POST
-$no_rekening = $_POST['no_rekening'];
+$no_rekening = "SMT".$_POST['no_rekening'];
 $nama = $_POST['nama'];
 $id_jenjang = $_POST['id_jenjang'];
 $saldo = $_POST['saldo'];
