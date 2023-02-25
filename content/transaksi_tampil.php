@@ -43,13 +43,11 @@
                                     elseif ($data['kode_tr']=="2"){echo "Tarik";}
                                     ?></td>
                                 <td><?= "Rp. ". number_format($data['nominal'],0,",", ".") . ",-"; ?></td>
-<<<<<<< HEAD
                                 <!--                                <td>--><?php //= "Rp. ". number_format($data['setor'],0,",", ".") . ",-"; ?><!--</td>-->
                                 <!--                                <td>--><?php //= "Rp. ". number_format($data['tarik'],0,",", ".") . ",-"; ?><!--</td>-->
-=======
+
 <!--                                <td>--><?php //= "Rp. ". number_format($data['setor'],0,",", ".") . ",-"; ?><!--</td>-->
 <!--                                <td>--><?php //= "Rp. ". number_format($data['tarik'],0,",", ".") . ",-"; ?><!--</td>-->
->>>>>>> 81ed7b7baf2883c209c027194b1a2868276751a7
                             </tr>
                             <?php
                         }
