@@ -60,7 +60,11 @@ desired effect
     <?php include "parts/sidebar-left1.php" ?>
 
     <?php // include "parts/sidebar-right.php" ?>
+<<<<<<< HEAD
     <?php include "parts/footer.php" ?>
+=======
+<?php include "parts/footer.php" ?>
+>>>>>>> 81ed7b7baf2883c209c027194b1a2868276751a7
 </div>
 
 <!-- ./wrapper -->

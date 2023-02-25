@@ -30,7 +30,11 @@ $kode_tr=1;
 // }
 $cek_saldo="SElECT saldo from data_nasabah where id_nasabah='$id_nasabah'";
 $query_cek_saldo=mysqli_fetch_row(mysqli_query($koneksi,$cek_saldo));
+<<<<<<< HEAD
 $saldo_awal= $query_cek_saldo[0];
+=======
+$saldo_awal= $query_cek_saldo[0]; 
+>>>>>>> 81ed7b7baf2883c209c027194b1a2868276751a7
 
 $query_transaksi="INSERT INTO transaksi SET
 tanggal='$tanggal',

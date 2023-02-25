@@ -41,6 +41,7 @@
                                 <td><?= "Rp. ". number_format($data['saldo'],0,",", ".") . ",-"; ?></td>
                                 <td>
                                     <a class="btn btn-sm btn-success" href="?hal=transaksi_tambah_setor&id=<?= $data['id_nasabah'] ?>"> Setor </a>
+<<<<<<< HEAD
                                     <a class="btn btn-sm btn-warning"
                                         <?php
 
@@ -56,16 +57,41 @@
                                         }
                                         ?>
                                     > Tarik </a>
+=======
+                                    <a class="btn btn-sm btn-warning" 
+<?php 
+
+ //Fungsi untuk menon aktifkan tombol tarik 
+ // jika saldo lebi kecil atau sama dengan 10000
+if ($data['saldo'] <= 10000 ) {
+    ?>
+onclick="alert('Maaf, saldo tidak bisa ditarik!')"
+<?php
+}else {?>
+href="?hal=transaksi_tambah_tarik&id=<?= $data['id_nasabah'] ?>"
+    <?php
+}
+?> 
+> Tarik </a>
+>>>>>>> 81ed7b7baf2883c209c027194b1a2868276751a7
                                 </td>
                                 <td>
                                     <!-- Modifikasi tombol edit dan hapus-->
                                     <a class="btn btn-sm btn-info" href="?hal=nasabah_edit&id=<?= $data['id_nasabah'] ?>">
+<<<<<<< HEAD
                                         <i class="fa fa-pencil"></i>
+=======
+                                        <i class="fa fa-pencil"></i> 
+>>>>>>> 81ed7b7baf2883c209c027194b1a2868276751a7
                                     </a>
                                     <a class="btn btn-sm btn-danger" href="?hal=nasabah_delete&id=<?= $data['id_nasabah'] ?>">
                                         <i class="fa fa-eraser"></i>
                                     </a>
+<<<<<<< HEAD
                                     <a class="btn btn-sm btn-primary" onclick="window.open('content/print.php','_blank','height=570,width=520,scrolbars=yes,status=yes');">
+=======
+                                    <a class="btn btn-sm btn-primary" href="?hal=print&id=<?= $data['id_nasabah'] ?>">
+>>>>>>> 81ed7b7baf2883c209c027194b1a2868276751a7
                                         <i class="fa fa-print"></i>
                                     </a>
                                 </td>
