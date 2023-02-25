@@ -1,3 +1,4 @@
+
 <section class="content-header">
     <h1>Tambah Transakasi</h1>
 </section>
@@ -18,18 +19,18 @@
                             <label for="tanggal">Tanggal</label>
                             <input type="date" class="form-control" name="tanggal" id="tanggal" placeholder="tanggal"required>
                         </div>
-                            <div class="form-group">
-                                <label for="id_nasabah">Nama Nasabah</label>
-                                <select class="form-control" name="id_nasabah" id="id_nasabah" required>
-                                    <option value=""> - Pilih Nasabah - </option>
-                                    <?php
-                                    $query_nasabah=mysqli_query($koneksi,"SELECT * FROM data_nasabah");
-                                    while ($j=mysqli_fetch_array($query_nasabah)){
-                                        echo "<option value='$j[id_nasabah]'> $j[nama]</option>";
-                                    }
-                                    ?>
-                                </select>
-                            </div>
+                        <div class="form-group">
+                            <label for="id_nasabah">Nama Nasabah</label>
+                            <select class="form-control" name="id_nasabah" id="id_nasabah" required>
+                                <option value=""> - Pilih Nasabah - </option>
+                                <?php
+                                $query_nasabah=mysqli_query($koneksi,"SELECT * FROM data_nasabah");
+                                while ($j=mysqli_fetch_array($query_nasabah)){
+                                    echo "<option value='$j[id_nasabah]'> $j[nama]</option>";
+                                }
+                                ?>
+                            </select>
+                        </div>
                         <div class="form-group">
                             <label for="kode_tr">Jenis Transaksi</label>
                             <div class="radio">
@@ -43,19 +44,19 @@
                                 </label>
 
                             </div>
-                        <div class="form-group">
-                            <label for="nominal">Nominal</label>
-                            <input type="number" class="form-control" name="nominal" id="nominal" placeholder="Masukkan nominal uang">
+                            <div class="form-group">
+                                <label for="nominal">Nominal</label>
+                                <input type="number" class="form-control" name="nominal" id="nominal" placeholder="Masukkan nominal uang">
+                            </div>
+                            <div class="box-footer">
+                                <button type="submit" class="btn btn-success">Simpan</button>
+                                <a class="btn btn-danger" href="?hal=transaksi_tampil">Batal</a>
+                            </div>
                         </div>
-                        <div class="box-footer">
-                            <button type="submit" class="btn btn-success">Simpan</button>
-                            <a class="btn btn-danger" href="?hal=transaksi_tampil">Batal</a>
-                        </div>
-                    </div>
                 </form>
             </div>
             <!-- /.box -->
         </div>
         <!--/.col (left) -->
     </div>
-    </section>
+</section>

@@ -1,6 +1,8 @@
+
 <?php
 include_once "library/config.php";
 //menampung nilai variable $_POST
+$id_nasabah = $_POST['id_nasabah'];
 $no_rekening = $_POST['no_rekening'];
 $nama = $_POST['nama'];
 $id_jenjang = $_POST['id_jenjang'];
@@ -13,7 +15,9 @@ no_rekening='$no_rekening',
 nama='$nama',
 id_jenjang='$id_jenjang',
 saldo='$saldo',
-jk='$jk'";
+jk='$jk'
+WHERE id_nasabah='$id_nasabah'
+";
 $query=mysqli_query($koneksi,$q);
 
 if ($query){

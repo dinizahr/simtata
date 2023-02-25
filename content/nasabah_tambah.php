@@ -1,3 +1,4 @@
+
 <section class="content-header">
     <h1>Tambah Nasabah</h1>
 </section>
@@ -49,7 +50,7 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="saldo">Saldo</label>
+                                <label for="saldo">Saldo Awal</label>
                                 <input type="number" class="form-control" name="saldo" id="saldo" placeholder="Saldo" required>
                             </div>
 
@@ -63,8 +64,8 @@
                     </div>
                 </form>
 
-            <!-- /.box -->
+                <!-- /.box -->
+            </div>
+            <!--/.col (left) -->
         </div>
-        <!--/.col (left) -->
-    </div>
-    </section>
+</section>

@@ -20,6 +20,7 @@
                             <th>Nama Nasabah</th>
                             <th>Jenjang</th>
                             <th>Saldo</th>
+                            <th>Transaksi</th>
                             <th>Aksi</th>
                         </tr>
                         </thead>
@@ -39,10 +40,34 @@
                                 <td><?= $data['nama_jenjang']; ?></td>
                                 <td><?= "Rp. ". number_format($data['saldo'],0,",", ".") . ",-"; ?></td>
                                 <td>
+                                    <a class="btn btn-sm btn-success" href="?hal=transaksi_tambah_setor&id=<?= $data['id_nasabah'] ?>"> Setor </a>
+                                    <a class="btn btn-sm btn-warning"
+                                        <?php
+
+                                        //Fungsi untuk menon aktifkan tombol tarik
+                                        // jika saldo lebi kecil atau sama dengan 10000
+                                        if ($data['saldo'] <= 10000 ) {
+                                            ?>
+                                            onclick="alert('Maaf, saldo tidak bisa ditarik!')"
+                                            <?php
+                                        }else {?>
+                                            href="?hal=transaksi_tambah_tarik&id=<?= $data['id_nasabah'] ?>"
+                                            <?php
+                                        }
+                                        ?>
+                                    > Tarik </a>
+                                </td>
+                                <td>
                                     <!-- Modifikasi tombol edit dan hapus-->
-                                    <a class="btn btn-sm btn-warning" href="?hal=nasabah_edit&id=<?= $data['id_nasabah'] ?>"> Edit </a>
-                                    <a class="btn btn-sm btn-danger" href="?hal=nasabah_delete&id=<?= $data['id_nasabah'] ?>"> Hapus </a>
-                                    <a class="btn btn-sm btn-primary" href="?hal=print&id=<?= $data['id_nasabah'] ?>"> Print </a>
+                                    <a class="btn btn-sm btn-info" href="?hal=nasabah_edit&id=<?= $data['id_nasabah'] ?>">
+                                        <i class="fa fa-pencil"></i>
+                                    </a>
+                                    <a class="btn btn-sm btn-danger" href="?hal=nasabah_delete&id=<?= $data['id_nasabah'] ?>">
+                                        <i class="fa fa-eraser"></i>
+                                    </a>
+                                    <a class="btn btn-sm btn-primary" onclick="window.open('content/print.php','_blank','height=570,width=520,scrolbars=yes,status=yes');">
+                                        <i class="fa fa-print"></i>
+                                    </a>
                                 </td>
                             </tr>
                             <?php
@@ -58,5 +83,3 @@
     </div>
 
 </section>
-
-

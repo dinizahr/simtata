@@ -1,29 +1,110 @@
-<?php
-?>
+<section class="content-header">
+    <h1>Profil Aplikasi</h1>
+</section>
+<!-- About Me Box -->
 
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>SIMTATA</title>
-</head>
-<body>
-  <center><h1><b>Aplikasi Simtata</b></h1></center>
-  <p>
-    <center><img src="logo1.jpg"alt="logo1" width="400" height="200" float:right></center>
-  </p>
-  <p align ="justify">
-    <center><b>SIMTATA</b>(<i>Simpan Tarik Tabungan</i>)merupakan sebuah aplikasi atau tempat para nasabah untuk menabung uang ataupun mengambil uang yang mereka tabung.</center>
-         Nasabah adalah seorang atau badan usaha maupun lembaga yang mempunyai rekening simpanan dan pinjaman sedangkan transaksi adalah pertukaran barang dan jasa baik individu,
-         perusahaan, atau organisasi yang mempunyai pengaruh ekonomi atas bisnis. Transaksi itu ada dua yaitu transaksi internal dan transaksi eksternal.<br> Transaksi internal
-         ialah transaksi yang hanya melibatkan bagian bagian yang ada di dalam perusahaan dan transaksi eksternal ialah transaksi yang melibatkan pihak luar perusahaan.
-         Alat - alat bukti untuk bertransaksi yang : 1) faktur, 2) kwitansi, 3) nota debet, 4) nota kredit, 5) cek,6) bliyet giro. Akan tetapi pendataan nasabah baru masih
-         menggunakan metode manual, dimana data dan laporan transaksi nasabah masih ditulis dan disimpan diatas kertas.<br> Cara tersebut masih banyak sekali kekurangan salah
-          satunya terjadi kerusakan dan kehilangan data nasabah. Untuk itu perlu dibuat sistem penyimpanan data nasabah dan penyimpan laporan transaksi nasabah secara secara otomatis
-          dengan berbasis Web. Aplikasi ini hanya bisa di kelola oleh pegawai bank itu sendiri. Aplikasi ini akan dirancang sehingga memungkinkan akan mengurangi masalah dalam
-          penyimpanan data dan laporan transaksi. Berdasarkan uraian diatas, solusi yang akan ditulis dan diangkat dalam penulisan laporan ini berjudul ”Aplikasi Simpan Tarik Tabungan”.<br>
-Maka kami membuat suatu aplikasi yang dapat mengatasi problematika di dunia perbankan saat ini, dengan menciptakan “Aplikasi Simpan Tarik Tabungan” dengan tujuan untuk mempermudah
- nasabah untuk mengelola keuangan dan data secara akurat.
+<!-- /.col -->
+<div class="col-md-9">
+    <div class="nav-tabs-custom">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#activity" data-toggle="tab">Activity</a></li>
+            <li><a href="#timeline" data-toggle="tab">Timeline</a></li>
+            <li><a href="#settings" data-toggle="tab">Settings</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="active tab-pane" id="activity">
+                <!-- Post -->
+                <div class="post">
+                    <div class="user-block">
+                        <img class="img-circle img-bordered-sm" src="../../dist/img/user1-128x128.jpg" alt="user image">
+                        <span class="username">
+                          <a href="#">Jonathan Burke Jr.</a>
+                          <a href="#" class="pull-right btn-box-tool"><i class="fa fa-times"></i></a>
+                        </span>
+                        <span class="description">Shared publicly - 7:30 PM today</span>
+                    </div>
+                    <!-- /.user-block -->
+                    <p>
+                        Lorem ipsum represents a long-held tradition for designers,
+                        typographers and the like. Some people hate it and argue for
+                        its demise, but others ignore the hate as they create awesome
+                        tools to help create filler text for everyone from bacon lovers
+                        to Charlie Sheen fans.
+                    </p>
 
-  </p>
-</body>
-</html>
+                </div>
+                <!-- /.post -->
+
+                <!-- Post -->
+                <div class="post clearfix">
+                    <div class="user-block">
+                        <img class="img-circle img-bordered-sm" src="../../dist/img/user7-128x128.jpg" alt="User Image">
+                        <span class="username">
+                          <a href="#">Sarah Ross</a>
+                          <a href="#" class="pull-right btn-box-tool"><i class="fa fa-times"></i></a>
+                        </span>
+                        <span class="description">Sent you a message - 3 days ago</span>
+                    </div>
+                    <!-- /.user-block -->
+                    <p>
+                        Lorem ipsum represents a long-held tradition for designers,
+                        typographers and the like. Some people hate it and argue for
+                        its demise, but others ignore the hate as they create awesome
+                        tools to help create filler text for everyone from bacon lovers
+                        to Charlie Sheen fans.
+                    </p>
+
+                    <form class="form-horizontal">
+                        <div class="form-group margin-bottom-none">
+                            <div class="col-sm-9">
+                                <input class="form-control input-sm" placeholder="Response">
+                            </div>
+                            <div class="col-sm-3">
+                                <button type="submit" class="btn btn-danger pull-right btn-block btn-sm">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- /.post -->
+
+                <!-- Post -->
+                <div class="post">
+                    <div class="user-block">
+                        <img class="img-circle img-bordered-sm" src="../../dist/img/user6-128x128.jpg" alt="User Image">
+                        <span class="username">
+                          <a href="#">Adam Jones</a>
+                          <a href="#" class="pull-right btn-box-tool"><i class="fa fa-times"></i></a>
+                        </span>
+                        <span class="description">Posted 5 photos - 5 days ago</span>
+                    </div>
+                    <!-- /.user-block -->
+                    <div class="row margin-bottom">
+                        <div class="col-sm-6">
+                            <img class="img-responsive" src="../../dist/img/photo1.png" alt="Photo">
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <img class="img-responsive" src="../../dist/img/photo2.png" alt="Photo">
+                                    <br>
+                                    <img class="img-responsive" src="../../dist/img/photo3.jpg" alt="Photo">
+                                </div>
+                                <!-- /.col -->
+                                <div class="col-sm-6">
+                                    <img class="img-responsive" src="../../dist/img/photo4.jpg" alt="Photo">
+                                    <br>
+                                    <img class="img-responsive" src="../../dist/img/photo1.png" alt="Photo">
+                                </div>
+                                <!-- /.col -->
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

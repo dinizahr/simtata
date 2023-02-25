@@ -1,7 +1,7 @@
 <?php
 include "library/config.php";
 
-//menghapus data sesuai id_siswa yang dipilih
+//menghapus data sesuai id_nasabah yang dipilih
 $q = "DELETE FROM data_nasabah WHERE id_nasabah='$_GET[id]'";
 $query = mysqli_query($koneksi,$q);
 

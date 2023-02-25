@@ -19,7 +19,7 @@ $jml_transaksi = mysqli_num_rows(mysqli_query($koneksi,"SELECT * FROM transaksi"
     <div class="row">
         <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="info-box">
-                <span class="info-box-icon bg-blue"><i class="fa fa-users"></i></span>
+                <span class="info-box-icon bg-blue-gradient"><i class="fa fa-users"></i></span>
 
                 <div class="info-box-content">
                     <span class="info-box-text">NASABAH</span>
@@ -32,7 +32,7 @@ $jml_transaksi = mysqli_num_rows(mysqli_query($koneksi,"SELECT * FROM transaksi"
         <!-- /.col -->
         <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="info-box">
-                <span class="info-box-icon bg-navy"><i class="fa fa-building"></i></span>
+                <span class="info-box-icon bg-red"><i class="fa fa-building"></i></span>
 
                 <div class="info-box-content">
                     <span class="info-box-text">TRANSAKSI</span>
@@ -41,6 +41,6 @@ $jml_transaksi = mysqli_num_rows(mysqli_query($koneksi,"SELECT * FROM transaksi"
                 <!-- /.info-box-content -->
             </div>
             <!-- /.info-box -->
-    </div>
-    <!-- /.row -->
+        </div>
+        <!-- /.row -->
 </section>

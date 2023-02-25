@@ -8,7 +8,7 @@ if (empty($_SESSION['username']) or
 {
     echo "<script>
     window.alert('maaf anda harus login terlebih dahulu');
-    window.location.href='login';
+    window.location.href='login.php';
     </script>";
 } else {
     define('INDEX', true);
@@ -25,7 +25,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <html>
 <?php include "parts/head.php" ?>
 <!--
-
 BODY TAG OPTIONS:
 =================
 Apply one or more of the following classes to get the
@@ -45,12 +44,12 @@ desired effect
 |               | sidebar-mini                            |
 |---------------------------------------------------------|
 -->
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition skin-yellow sidebar-mini">
 <div class="wrapper">
 
     <?php include "parts/header/header.php" ?>
 
-<!--    --><?php //include "content/dashboard.php"?>
+    <!--    --><?php //include "content/dashboard.php"?>
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
@@ -58,16 +57,16 @@ desired effect
     </div>
     <!-- /.content-wrapper -->
 
-<?php include "parts/sidebar-left1.php" ?>
+    <?php include "parts/sidebar-left1.php" ?>
 
     <?php // include "parts/sidebar-right.php" ?>
-
+    <?php include "parts/footer.php" ?>
 </div>
-<?php include "parts/footer.php" ?>
+
 <!-- ./wrapper -->
 
 <?php include "parts/js-files.php" ?>
 
 
 </body>
-</html>
+</html

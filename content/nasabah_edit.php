@@ -1,3 +1,4 @@
+
 <?php
 include "library/config.php";
 
@@ -47,7 +48,3 @@ $data = mysqli_fetch_array($query);
 </form>
 </body>
 </html>
-
-
-
-
