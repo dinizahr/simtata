@@ -21,7 +21,9 @@ $halaman=[
     "transaksi_tambah_setor",
     "transaksi_tambah_tarik",
     "transaksi_tampil",
-    "transaksi_update"
+    "transaksi_update",
+    "daftar_cetak",
+    "slip_cetak"
 ];
 if(isset($_GET['hal'])) $hal = $_GET['hal'];
 else $hal = "dashboard";

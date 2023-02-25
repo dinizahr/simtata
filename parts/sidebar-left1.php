@@ -6,7 +6,7 @@
 
         <!-- Sidebar Menu -->
         <ul class="sidebar-menu" data-widget="tree">
-            <li class="header">DAFTAR Nasabah</li>
+            <li class="header">LIST FITUR APLIKASI</li>
             <!-- Optionally, you can add icons to the links -->
             <li><a href="?hal=dashboard"><i class="fa fa-tachometer"></i> <span>Dashboard</span></a></li>
             <li><a href="?hal=profil"><i class="fa fa-building"></i> <span>Profil Aplikasi</span></a></li>

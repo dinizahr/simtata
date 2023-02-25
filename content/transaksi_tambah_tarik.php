@@ -32,7 +32,6 @@ $data = mysqli_fetch_array($query);
                             <input type="text" class="form-control" name="nama" id="nama" value="<?= $data['nama'] ?>" required readonly>
 
                         </div>
-<<<<<<< HEAD
                         <!--                         <div class="form-group">
                                                     <label for="kode_tr">Jenis Transaksi</label>
                                                     <div class="radio">
@@ -61,34 +60,4 @@ $data = mysqli_fetch_array($query);
         <!--/.col (left) -->
     </div>
 </section>
-=======
-<!--                         <div class="form-group">
-                            <label for="kode_tr">Jenis Transaksi</label>
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" name="kode_tr" id="kode_tr" value="1" required>Setor
-                                </label>
-                            </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" name="kode_tr" id="kode_tr" value="2">Tarik
-                                </label>
 
-                            </div> -->
-                            <div class="form-group">
-                                <label for="nominal">Nominal</label>
-                                <input type="number" class="form-control" name="nominal" id="nominal" placeholder="Masukkan nominal uang" required>
-                            </div>
-                            <div class="box-footer">
-                                <button type="submit" class="btn btn-success">Simpan</button>
-                                <a class="btn btn-danger" href="?hal=nasabah_tampil">Batal</a>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <!-- /.box -->
-            </div>
-            <!--/.col (left) -->
-        </div>
-    </section>
->>>>>>> 81ed7b7baf2883c209c027194b1a2868276751a7
