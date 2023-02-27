@@ -1,6 +1,6 @@
 <?php
 include "library/config.php";
-//menampung nilai variable $_POST
+
 
 //$nama = $_POST['nama'];
 //$jk = $_POST['jk'];
@@ -8,11 +8,13 @@ include "library/config.php";
 //$setor = $_POST['setor'];
 //$tarik = $_POST['tarik'];
 
+//menampung nilai variable $_POST
 $tanggal = $_POST['tanggal'];
 $id_nasabah = $_POST['id_nasabah'];
 $nominal= $_POST['nominal'];
 $kode_tr=$_POST['kode_tr'];
 
+//analogi kode_tr yang dimana kode 1 adalah setor dan kode 2 adalah tarik
 if ($kode_tr=="1"){
     $q="UPDATE transaksi SET
 tanggal='$tanggal',

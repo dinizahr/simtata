@@ -26,6 +26,7 @@
                         </tr>
                         </thead>
                         <tbody>
+<!-- memilih data dari table view_nasabah-->
                         <?php
                         $tampil = "SElECT * FROM view_transaksi";
                         $query = mysqli_query($koneksi,$tampil);
@@ -43,12 +44,6 @@
                                     elseif ($data['kode_tr']=="2"){echo "Tarik";}
                                     ?></td>
                                 <td><?= "Rp. ". number_format($data['nominal'],0,",", ".") . ",-"; ?></td>
-                                <!--                                <td>--><?php //= "Rp. ". number_format($data['setor'],0,",", ".") . ",-"; ?><!--</td>-->
-                                <!--                                <td>--><?php //= "Rp. ". number_format($data['tarik'],0,",", ".") . ",-"; ?><!--</td>-->
-
-<!--                                <td>--><?php //= "Rp. ". number_format($data['setor'],0,",", ".") . ",-"; ?><!--</td>-->
-<!--                                <td>--><?php //= "Rp. ". number_format($data['tarik'],0,",", ".") . ",-"; ?><!--</td>-->
-                            </tr>
                             <?php
                         }
                         ?>

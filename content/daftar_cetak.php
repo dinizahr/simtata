@@ -25,6 +25,7 @@
                         </tr>
                         </thead>
                         <tbody>
+<!- mengambil data dari table transaksi-->
                         <?php
                         $tampil = "SELECT * FROM transaksi 
 JOIN data_nasabah 

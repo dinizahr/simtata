@@ -1,4 +1,3 @@
-
 <section class="content-header">
     <h1>Tambah Nasabah</h1>
 </section>
@@ -41,6 +40,8 @@
                                 <label for="id_jenjang">Jenjang</label>
                                 <select class="form-control" name="id_jenjang" id="id_jenjang" required>
                                     <option value=""> - Pilih Jenjang - </option>
+
+                                    //  mengubah id_jenjang menjadi nama_jenjang di tampilan nasabah_tampil
                                     <?php
                                     $query_jenjang=mysqli_query($koneksi,"SELECT * FROM jenjang");
                                     while ($j=mysqli_fetch_array($query_jenjang)){

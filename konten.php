@@ -1,6 +1,6 @@
 <?php
 if (!defined('INDEX')) die("");
-
+//daftar yang ada didalam content
 $halaman=[
     "dashboard",
     // menu nasabah
@@ -10,7 +10,6 @@ $halaman=[
     "nasabah_edit",
     "nasabah_delete",
     "nasabah_update",
-    "print",
     "profil",
     "transaksi_delete",
     "transaksi_edit",

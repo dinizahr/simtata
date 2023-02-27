@@ -25,6 +25,7 @@
                         </tr>
                         </thead>
                         <tbody>
+<!-- memilih data yang ada di view_nasabah-->
                         <?php
                         $tampil = "SElECT * FROM view_nasabah";
                         $query = mysqli_query($koneksi,$tampil);
@@ -38,6 +39,8 @@
                                 <td><?= $data['no_rekening']; ?></td>
                                 <td><?= $data['nama']; ?></td>
                                 <td><?= $data['nama_jenjang']; ?></td>
+
+<!--perintah untuk menambahkan Rp dan nol seterusna pada nominal-->
                                 <td><?= "Rp. ". number_format($data['saldo'],0,",", ".") . ",-"; ?></td>
                                 <td>
                                     <a class="btn btn-sm btn-success" href="?hal=transaksi_tambah_setor&id=<?= $data['id_nasabah'] ?>"> Setor </a>
