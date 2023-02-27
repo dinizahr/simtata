@@ -8,9 +8,12 @@
                         <p><b>SIMTATA</b><br>
                             <i>hak cipta milik kelompok 3</i>
                     </div>
-                        SIMTATA merupakan aplikasi berbasis web yang didalamnya terdapat dua transaksi yaitu, Penyetoran dan Penarikan.<br>
-                        SIMTATA dirancang oleh purna siswa PKL Kelompok 3 yang di bina oleh Ust. Amama Ali S.EI .<br>Aplikasi SIMTATA dibuat
-                        untuk memudahkan nasabah malakukan transaksi melalui laptop,komputer maupun smartphone yang tersambung ke internet.<hr>
+                        SIMTATA merupakan aplikasi berbasis web yang  dibuat untuk staf mini bank SMK-BP Subulul Huda Kembangsawit.<br>
+                SIMTATA bertujuan untuk meminimalisir penyimpanan data nasabah dan transaksi secara manual oleh staf mini bank bagian Admin.<br>
+                SIMTATA dilengkapi oleh fitur print yang dimana dapat mengeluarkan slip transaksi pada saat itu juga.<br>
+                Aplikasi ini di rancang oleh kelompok 3 peserta PKL tahun 2023. Dibawah bimbingan Usatad Amama Ali S.E.I.<br>
+                <b>Berikut Profil Perancang Aplikasi SIMTATA.</b>
+       <hr>
 
                         <center><b>PROFIL PERANCANG APLIKASI</b><br></center><br>
                 <table border="1" width="600px">
@@ -68,9 +71,7 @@
                     </tr>
                     </tbody>
                 </table><br><hr>
-                Aplikasi ini dirancang mulai tanggal 10 Februari 2023 dan diselesaikan pada tanggal 27 februari 2023.yang melatar belakangi<br>
-                pembuatan aplikasi ini adalah mempermudah pensinkronisasian rekapitulasi nasabah pada saat melakukan transaksi.
-
+                <i>Aplikasi ini dirancang mulai tanggal 10 Februari 2023 dan diselesaikan pada tanggal 27 februari 2023.</i>
                 </div>
                     <!-- /.row -->
                 </div>
@@ -78,3 +79,12 @@
         </div>
     </div>
 </div>
+
+
+
+<!--didalamnya terdapat dua fitur transaksi yaitu, Penyetoran dan Penarikan.<br>yang melatar belakangi-->
+<!--pembuatan aplikasi ini adalah meminimalisir penyimpanan secara manual oleh karyawan bank mini.di dalam aplikasi ini terdapat fitur-->
+<!--print yang dimana mengeluarkan slip saat melakukan transaksi.-->
+<!---->
+<!--<br>Aplikasi SIMTATA dibuat-->
+<!--untuk memudahkan nasabah malakukan transaksi melalui laptop,komputer maupun smartphone yang tersambung ke internet.-->
