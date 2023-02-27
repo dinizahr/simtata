@@ -88,17 +88,13 @@ function tanggal_indonesia($tanggal){
                 <div class="box-header">
                     <h3 class=" text-center">Slip Transaksi</h3>
                     <p class=" text-center"> <b>SIMTATA | SMK BP Subulul Huda</b></p>
-                    <p class=" text-center"> <b>Per Tanggal :
-                            <?php
-                            echo tanggal_indonesia(date('Y-m-d'));
-                            ?>
-                        </b></p>
                 </div>
                                 <div class="box-body">
                                     <p>Tanggal: <?=$data['tanggal']?></p>
                                     <p>No. Rekening: <?=$data['no_rekening']?></p>
                                     <p>Nama Nasabah: <?=$data['nama']?></p>
                                     <p>Nominal: <?= "Rp. ". number_format($data['nominal'],0,",", ".") . ",-"; ?></p><br>
+                                    <p>Saldo: <?= "Rp. ". number_format($data['saldo'],0,",", ".") . ",-"; ?></p>
                                     <p class="pull-right">Paraf Nasabah:</p>
 
                                 </div>
