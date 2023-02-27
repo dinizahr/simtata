@@ -7,7 +7,7 @@
         <!-- left column -->
         <div class="col-md-6">
             <!-- gene l form elements -->
-            <div class="box box-primary">
+            <div class="box box-warning">
                 <div class="box-header with-border">
                     <!--  <h3 class="box-title">Quick Example</h3>-->
                 </div>
