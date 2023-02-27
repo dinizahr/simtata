@@ -7,7 +7,7 @@
     <meta name="author" content="" />
     <title>Landing aplikasi</title>
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Bootstrap Icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Google fonts-->
@@ -27,7 +27,9 @@
     <div class="container px-4 px-lg-5 h-100">
         <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
             <div class="col-lg-8 align-self-end">
-                <h1 class="text-white font-weight-bold"><b>SIMTATA</b><i> APLICATION &#x1F3E6</i></h1>
+
+    <img class="mb-4" src="assets/img/fix.png" style="width:150px " alt="">
+                <h1 class="text-white font-weight-bold"><b>SIMTATA</b><i> APLICATION </i></h1>
                 <hr class="divider" />
             </div>
             <div class="col-lg-8 align-self-baseline">

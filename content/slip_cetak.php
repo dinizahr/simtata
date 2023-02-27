@@ -78,7 +78,7 @@ function tanggal_indonesia($tanggal){
 </script>
 <section class="content-header">
     <a href="?hal=nasabah_tampil" class="btn btn-sm btn-primary tombol-kembali ">Kembali</a>
-    <a href="" class="btn btn-sm btn-warning tombol-kembali" onclick="window.print()" >Cetak Ulang</a>
+<!--    <a href="" class="btn btn-sm btn-warning tombol-kembali" onclick="window.print()" >Cetak Ulang</a>-->
 </section>
 <section class="content">
     <div class="row">
