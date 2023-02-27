@@ -7,7 +7,7 @@
     <meta name="author" content="" />
     <title>Landing aplikasi</title>
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="landing/assets/img/favicon.png"/>
+    <link rel="icon" type="image/x-icon" href="landing/assets/img/favicon.png" />
     <!-- Bootstrap Icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Google fonts-->

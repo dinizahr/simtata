@@ -16,11 +16,14 @@ if (empty($_SESSION['username']) or
 ?>
 
 
+
 <!DOCTYPE html>
 <!--
 This is a starter template page. Use this page to start your new project from
 scratch. This page gets rid of all links and provides the needed markup only.
 -->
+<!-- Favicon-->
+<link rel="icon" type="image/x-icon" href="landing/assets/img/favicon.png" />
 <html>
 <?php include "parts/head.php" ?>
 <!--
@@ -61,6 +64,7 @@ desired effect
     <?php // include "parts/sidebar-right.php" ?>
 
     <?php include "parts/footer.php" ?>
+
 </div>
 
 <!-- ./wrapper -->
@@ -70,3 +74,4 @@ desired effect
 
 </body>
 </html
+
