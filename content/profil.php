@@ -80,11 +80,3 @@
     </div>
 </div>
 
-
-
-<!--didalamnya terdapat dua fitur transaksi yaitu, Penyetoran dan Penarikan.<br>yang melatar belakangi-->
-<!--pembuatan aplikasi ini adalah meminimalisir penyimpanan secara manual oleh karyawan bank mini.di dalam aplikasi ini terdapat fitur-->
-<!--print yang dimana mengeluarkan slip saat melakukan transaksi.-->
-<!---->
-<!--<br>Aplikasi SIMTATA dibuat-->
-<!--untuk memudahkan nasabah malakukan transaksi melalui laptop,komputer maupun smartphone yang tersambung ke internet.-->
