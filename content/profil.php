@@ -11,7 +11,7 @@
                         SIMTATA merupakan aplikasi berbasis web yang  dibuat untuk staf mini bank SMK-BP Subulul Huda Kembangsawit.<br>
                 SIMTATA bertujuan untuk meminimalisir penyimpanan data nasabah dan transaksi secara manual oleh staf mini bank SMK-BP.<br>
                 SIMTATA dilengkapi oleh fitur print yang dimana dapat mengeluarkan slip transaksi pada saat itu juga.<br>
-                Aplikasi ini di rancang oleh kelompok 3 peserta PKL tahun 2023. Dibawah bimbingan <b>Usatad Amama Ali S.EI.</b><br>
+                Aplikasi ini di rancang oleh kelompok 3 peserta PKL tahun 2023. Dibawah bimbingan <b>Ustadz Amama Ali S.EI.</b><br>
                 <b>Berikut Profil Perancang Aplikasi SIMTATA.</b>
        <hr>
 
@@ -71,7 +71,7 @@
                     </tr>
                     </tbody>
                 </table><br><hr>
-                <i>Aplikasi ini dirancang mulai tanggal 10 Februari 2023 dan diselesaikan pada tanggal 27 februari 2023.</i>
+                <i>Aplikasi ini dirancang mulai tanggal 10 Februari 2023 dan diselesaikan pada tanggal 28 februari 2023.</i>
                 </div>
                     <!-- /.row -->
                 </div>
