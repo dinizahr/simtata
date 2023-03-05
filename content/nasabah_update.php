@@ -1,6 +1,7 @@
 
 <?php
 include_once "library/config.php";
+
 //menampung nilai variable $_POST
 $id_nasabah = $_POST['id_nasabah'];
 $no_rekening = $_POST['no_rekening'];

@@ -7,7 +7,6 @@
         <div class="col-xs-12">
             <div class="box">
                 <div class="box-header">
-                    <!--              <h3 class="box-title">Data Table With Full Features</h3>-->
                     <a class="btn btn-md btn-info" href="?hal=nasabah_tambah"> Tambah Nasabah</a>
                 </div>
                 <!-- /.box-header -->
@@ -25,6 +24,7 @@
                         </tr>
                         </thead>
                         <tbody>
+
 <!-- memilih data yang ada di view_nasabah-->
                         <?php
                         $tampil = "SElECT * FROM view_nasabah";
@@ -40,7 +40,7 @@
                                 <td><?= $data['nama']; ?></td>
                                 <td><?= $data['nama_jenjang']; ?></td>
 
-<!--perintah untuk menambahkan Rp dan nol seterusna pada nominal-->
+<!- -perintah untuk menambahkan Rp dan nol seterusnya pada nominal-->
                                 <td><?= "Rp. ". number_format($data['saldo'],0,",", ".") . ",-"; ?></td>
                                 <td>
                                     <a class="btn btn-sm btn-success" href="?hal=transaksi_tambah_setor&id=<?= $data['id_nasabah'] ?>"> Setor </a>

@@ -16,7 +16,7 @@
                     <div class="box-body">
                         <div class="form-group">
                             <label for="no_rekening">No. Rekening</label>
-                            <input type="text" class="form-control" name="no_rekening" id="no_rekening" placeholder="no_rekening" required>
+                            <input type="number" class="form-control" name="no_rekening" id="no_rekening" placeholder="no_rekening" required>
                         </div>
                         <div class="form-group">
                             <label for="nama">Nama Nasabah</label>

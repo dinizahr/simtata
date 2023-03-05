@@ -27,18 +27,6 @@ $data = mysqli_fetch_array($query);
                             <input type="text" class="form-control" name="nama" id="nama" value="<?= $data['nama'] ?>" required readonly>
 
                         </div>
-                        <!--                         <div class="form-group">
-                                                    <label for="kode_tr">Jenis Transaksi</label>
-                                                    <div class="radio">
-                                                        <label>
-                                                            <input type="radio" name="kode_tr" id="kode_tr" value="1" required>Setor
-                                                        </label>
-                                                    </div>
-                                                    <div class="radio">
-                                                        <label>
-                                                            <input type="radio" name="kode_tr" id="kode_tr" value="2">Tarik
-                                                        </label>
-                                                    </div> -->
                         <div class="form-group">
                             <label for="nominal">Nominal</label>
                             <input type="number" class="form-control" name="nominal" id="nominal" placeholder="Masukkan nominal uang" required>

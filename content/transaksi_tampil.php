@@ -7,9 +7,6 @@
         <div class="col-xs-12">
             <div class="box">
                 <div class="box-header">
-                    <!--<h3 class="box-title">Data Table With Full Features</h3>-->
-                    <!-- tombol di nonaktifkan -->
-                    <!-- <a class="btn btn-md btn-info" href="?hal=transaksi_tambah"> Tambah Transaksi</a> -->
                 </div>
                 <!-- /.box-header -->
                 <div class="box-body">
@@ -20,12 +17,11 @@
                             <th>Tanggal</th>
                             <th>Nama Nasabah</th>
                             <th>Jenis Transaksi</th>
-                            <!--                            <th>Setor</th>-->
-                            <!--                            <th>Tarik</th>-->
                             <th>Nominal</th>
                         </tr>
                         </thead>
                         <tbody>
+
 <!-- memilih data dari table view_nasabah-->
                         <?php
                         $tampil = "SElECT * FROM view_transaksi";

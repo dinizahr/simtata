@@ -1,40 +1,4 @@
 <?php
-//include "library/config.php";
-//
-////mengambil data nasabah dari database
-//$query = mysqli_query($koneksi,
-//    "SELECT * FROM view_transaksi WHERE id_transaksi='$_GET[id]'");
-//$data = mysqli_fetch_array($query);
-//?>
-<!--<script>-->
-<!--    onload(window.print());-->
-<!--</script>-->
-<!--<div class="content">-->
-<!--    <div class="row">-->
-<!--        <div class="col-md-8">-->
-<!--            <div class="box box-default">-->
-<!--                <div class="box-header">-->
-<!--                    <h3 class="box-title text-center">-->
-<!--                        Slip Transaksi-->
-<!--                    </h3>-->
-<!--                </div>-->
-<!--                <div class="box-body">-->
-<!--                    <p>Tanggal: --><?php //=$data['tanggal']?><!--</p>-->
-<!--                    <p>No. Rekening: --><?php //=$data['no_rekening']?><!--</p>-->
-<!--                    <p>Nama Nasabah: --><?php //=$data['nama']?><!--</p>-->
-<!--                    <p>Nominal: --><?php //= "Rp. ". number_format($data['nominal'],0,",", ".") . ",-"; ?><!--</p><br>-->
-<!--                    <p class="pull-right">Paraf Nasabah:</p>-->
-<!---->
-<!--                </div>-->
-<!--            </div>-->
-<!---->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
-
-
-
-<?php
 include "library/config.php";
 
 //mengambil data nasabah dari database
@@ -86,16 +50,55 @@ function tanggal_indonesia($tanggal){
 
             <div class="box box-default">
                 <div class="box-header">
-                    <h3 class=" text-center">Slip Transaksi</h3>
+                    <h3 class=" text-center">Slip Transaksi :
+                        <?php
+                            if ($data['kode_tr']=="1"){echo "Penyetoran";}
+                            elseif ($data['kode_tr']=="2"){echo "Penarikan";}
+                            ?></h3>
                     <p class=" text-center"> <b>SIMTATA | SMK BP Subulul Huda</b></p>
                 </div>
                                 <div class="box-body">
-                                    <p>Tanggal: <?=$data['tanggal']?></p>
-                                    <p>No. Rekening: <?=$data['no_rekening']?></p>
-                                    <p>Nama Nasabah: <?=$data['nama']?></p>
-                                    <p>Nominal: <?= "Rp. ". number_format($data['nominal'],0,",", ".") . ",-"; ?></p><br>
-                                    <p>Saldo: <?= "Rp. ". number_format($data['saldo'],0,",", ".") . ",-"; ?></p>
-                                    <p class="pull-right">Paraf Nasabah:</p>
+                                    <table class="table table-striped table-bordered">
+                                        <tbody>
+                                        <tr>
+                                            <td width="150em">Tanggal</td>
+                                            <td  width="50em" class="text-center">:</td>
+                                            <td><?=$data['tanggal']?></td>
+                                        </tr>
+                                        <tr>
+                                            <td>No. Rekening</td>
+                                            <td class="text-center">:</td>
+                                            <td><?=$data['no_rekening']?></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nama Nasabah</td>
+                                            <td class="text-center">:</td>
+                                            <td> <?=$data['nama']?></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nomina Transaksi</td>
+                                            <td class="text-center">:</td>
+                                            <td><?= "Rp. ". number_format($data['nominal'],0,",", ".") . ",-"; ?></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Saldo Akhir</td>
+                                            <td class="text-center">:</td>
+                                            <td><?= "Rp. ". number_format($data['saldo'],0,",", ".") . ",-"; ?></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="table">
+                                        <tr class="text-center">
+                                            <td>
+                                                <br><br><u><small>Teller</small></u><br><br><br>(......................................)
+                                            </td>
+                                            <td>
+                                                <br><br><u><small>Nasabah</small></u><br><br><br>(......................................)
+                                            </td>
+                                        </tr>
+
+                                    </table>
+                                    <hr>
 
                                 </div>
             </div>
@@ -103,4 +106,3 @@ function tanggal_indonesia($tanggal){
         </div>
     </div>
 </section>
-

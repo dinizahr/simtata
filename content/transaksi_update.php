@@ -1,13 +1,6 @@
 <?php
 include "library/config.php";
 
-
-//$nama = $_POST['nama'];
-//$jk = $_POST['jk'];
-//$id_jenjang = $_POST['id_jenjang'];
-//$setor = $_POST['setor'];
-//$tarik = $_POST['tarik'];
-
 //menampung nilai variable $_POST
 $tanggal = $_POST['tanggal'];
 $id_nasabah = $_POST['id_nasabah'];

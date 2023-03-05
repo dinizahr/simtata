@@ -1,9 +1,10 @@
 <?php
 
 include "library/config.php";
+
 //menampung nilai variable $_POST
 $no_rekening = "SMT".$_POST['no_rekening'];
-$nama = $_POST['nama'];
+$nama = htmlspecialchars( $_POST['nama']);
 $id_jenjang = $_POST['id_jenjang'];
 $saldo = $_POST['saldo'];
 $jk = $_POST['jk'];

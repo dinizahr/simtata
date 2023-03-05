@@ -2,33 +2,11 @@
 // var_dump($_POST);
 include "library/config.php";
 
-
-//$nama = $_POST['nama'];
-//$jk = $_POST['jk'];
-//$id_jenjang = $_POST['id_jenjang'];
-//$setor = $_POST['setor'];
-//$tarik = $_POST['tarik'];
-
 //menampung nilai variable $_POST
 $tanggal = $_POST['tanggal'];
 $id_nasabah = $_POST['id_nasabah'];
 $nominal= $_POST['nominal'];
 $kode_tr=1;
-
-// kode lama
-// if ($kode_tr=="1"){
-//     $q="INSERT INTO transaksi SET
-// tanggal='$tanggal',
-// id_nasabah='$id_nasabah',
-// kode_tr='$kode_tr',
-// setor='$nominal'";
-// } elseif ($kode_tr=="2"){
-//     $q="INSERT INTO transaksi SET
-// tanggal='$tanggal',
-// id_nasabah='$id_nasabah',
-// kode_tr='$kode_tr',
-// tarik='$nominal'";
-// }
 
 //menampikan data_nasabah yang ber id.....
 $cek_saldo="SElECT saldo from data_nasabah where id_nasabah='$id_nasabah'";
