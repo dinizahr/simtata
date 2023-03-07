@@ -50,10 +50,11 @@
                                     ?>
                                 </select>
                             </div>
-                            <div class="form-group">
+                            <!--  saldo awal di nonaktifkan -->
+                            <!-- <div class="form-group">
                                 <label for="saldo">Saldo Awal</label>
                                 <input type="number" class="form-control" name="saldo" id="saldo" placeholder="Saldo" required>
-                            </div>
+                            </div> -->
 
                         </div>
                         <!-- /.box-body -->

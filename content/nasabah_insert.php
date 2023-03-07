@@ -1,23 +1,31 @@
 <?php
 
-include "library/config.php";
 
 //menampung nilai variable $_POST
 $no_rekening = "SMT".$_POST['no_rekening'];
 $nama = htmlspecialchars( $_POST['nama']);
 $id_jenjang = $_POST['id_jenjang'];
-$saldo = $_POST['saldo'];
+// $saldo = $_POST['saldo'];
 $jk = $_POST['jk'];
 
-//memasukkan data ke dalam database
+// //memasukkan data ke dalam database
+// $q="INSERT INTO data_nasabah SET
+// no_rekening='$no_rekening',
+// nama='$nama',
+// id_jenjang='$id_jenjang',
+// saldo='$saldo',
+// jk='$jk'";
+
+//memasukkan data ke dalam database (refisi query)
 $q="INSERT INTO data_nasabah SET
 no_rekening='$no_rekening',
 nama='$nama',
 id_jenjang='$id_jenjang',
-saldo='$saldo',
+saldo=0,
 jk='$jk'";
 
 $query=mysqli_query($koneksi,$q);
+
 
 //aksi jika query sukses maupun gagal
 if ($query){

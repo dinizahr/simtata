@@ -7,6 +7,40 @@
         <div class="col-xs-12">
             <div class="box">
                 <div class="box-header">
+                <form class="pull-right" action="?hal=cetak_rekap_bulanan" method="post">
+<table>
+    <tr>
+        <td> Bulan:</td>
+        <td>
+        <select class="form-control" name="bulan" id="bulan" required>
+            <option value=""> Pilih Bulan </option>
+            <option value="1">Januari</option>
+            <option value="2">Februari</option>
+            <option value="3">Maret</option>
+            <option value="4">April</option>
+            <option value="5">Mei</option>
+            <option value="6">Juni</option>
+            <option value="7">Juli</option>
+            <option value="8">Agustus</option>
+            <option value="9">September</option>
+            <option value="10">Oktober</option>
+            <option value="11">November</option>
+            <option value="12">Desember</option>
+        </select>
+        </td>
+        <td> Tahun: </td>
+        <td>
+        <select class="form-control" name="tahun" id="tahun" required>
+            <option value=""> Pilih Tahun </option>
+            <option value="2023">2023</option>
+        </select>
+        </td>
+        <td>
+        <button class="btn btn-primary">Cetak</button>
+        </td>
+    </tr>
+</table>
+</form>
                 </div>
                 <!-- /.box-header -->
                 <div class="box-body">

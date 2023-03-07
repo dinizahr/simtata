@@ -17,8 +17,9 @@
                             <th>Tanggal</th>
                             <th>Nama Nasabah</th>
                             <th>Jenis Transaksi</th>
-                            <th>Nominal</th>
-                            <th>Saldo</th>
+                            <th>Saldo Awal</th>
+                            <th>Nominal Transaksi</th>
+                            <th>Saldo  Akhir</th>
                             <th>Aksi</th>
                         </tr>
                         </thead>
@@ -43,8 +44,9 @@ WHERE id_nasabah='$_GET[id]'";
                                     if ($data['kode_tr']=="1"){echo "Setor";}
                                     elseif ($data['kode_tr']=="2"){echo "Tarik";}
                                     ?></td>
+                                 <td><?= "Rp. ". number_format($data['saldo_awal'],0,",", ".") . ",-"; ?></td>
                                 <td><?= "Rp. ". number_format($data['nominal'],0,",", ".") . ",-"; ?></td>
-                                <td><?= "Rp. ". number_format($data['saldo'],0,",", ".") . ",-"; ?></td>
+                                <td><?= "Rp. ". number_format($data['saldo_akhir'],0,",", ".") . ",-"; ?></td>
                                 <td><a class="btn btn-sm btn-primary" href="?hal=slip_cetak&id=<?= $data['id_transaksi'] ?>">Cetak</a></td>
                             </tr>
 

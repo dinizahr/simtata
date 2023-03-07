@@ -76,14 +76,19 @@ function tanggal_indonesia($tanggal){
                                             <td> <?=$data['nama']?></td>
                                         </tr>
                                         <tr>
-                                            <td>Nomina Transaksi</td>
+                                            <td>Saldo Awal</td>
+                                            <td class="text-center">:</td>
+                                            <td><?= "Rp. ". number_format($data['saldo_awal'],0,",", ".") . ",-"; ?></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nominal Transaksi</td>
                                             <td class="text-center">:</td>
                                             <td><?= "Rp. ". number_format($data['nominal'],0,",", ".") . ",-"; ?></td>
                                         </tr>
                                         <tr>
                                             <td>Saldo Akhir</td>
                                             <td class="text-center">:</td>
-                                            <td><?= "Rp. ". number_format($data['saldo'],0,",", ".") . ",-"; ?></td>
+                                            <td><?= "Rp. ". number_format($data['saldo_akhir'],0,",", ".") . ",-"; ?></td>
                                         </tr>
                                         </tbody>
                                     </table>
