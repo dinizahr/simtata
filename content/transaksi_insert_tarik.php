@@ -15,7 +15,7 @@ $kode_tr=2;
 //  var_dump($saldo_awal);
 
 
-if($saldo_awal - $nominal<= 10000){
+if($saldo_awal - $nominal < 10000){
     echo "<script>
     window.alert('Maaf , Penarikan gagal!\\nSisa saldo minimal adalah Rp. 10.000,-');
     window.location.href='?hal=nasabah_tampil';
